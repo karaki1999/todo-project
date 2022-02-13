@@ -1,43 +1,39 @@
-* {
+body{
+    width: 100%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
-    font-weight: bold;
-}
-
-/* Top */
-
-header{
-    background-color: #777;
-    width: 100%;
-    height: 50px;
-    display: inline-block;
-}
-#imgId{
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-}
-h2{
-    position: fixed;
-    margin-top: 10px;
-    margin-left: 45%;
-    display: inline-block;
 }
 nav{
-    display: inline-block;
-    margin-left: 75%;
+
+    margin-top: 0%;
+    background-color: #888;
+    height: 70px;
+    width: 100%;
+}
+#headImg{
+    position: relative;
+    height: 70px;
+}
+a{
+    font-size: 19px;
+    font-weight: bold;
     position: fixed;
-    margin-top: 10px;
-}
-a {
-    font-size: 20px;
-    display: inline-block;
-    color: black;
+    margin-top: 24px;
+    margin-left: 30%;
     text-decoration: none;
-
+    color: black;
+    text-align: center;
 }
-/* Down */
+.A2{
+    margin-left: 60%;
+}
+nav > div{
+    position: relative;
+}
+/* head ends here */
 
+/* Footer */
 footer{
     position: fixed;
     bottom: 0px;
