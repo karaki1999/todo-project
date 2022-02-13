@@ -1,0 +1,26 @@
+#FDiv {
+    padding-left: 10px;
+    width: 50%;
+    border-right: 5px black solid;
+    position: fixed;
+    height: 100%;
+}
+.table {
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 55%;
+    width: 300px;
+    font-size: 25px;
+
+}
+input{
+    width: 250px;
+    height: 40px;
+}
+button {
+    margin-top: 20px;
+    width: 180px;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+}
