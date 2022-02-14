@@ -1,42 +1,27 @@
-function myFunction() {
-    var name, gender, age, answer;
-    name = prompt("Please Enter Your Name : ");
-    console.log("Name : ", name);
-    gender = prompt ("Please Enter Your Gender : ")
-    age = prompt("please Enter Your Age : ")
-    if (age <= 0)
+function myFunction()
+{
+    question();
+} 
+function question()
+{
+    questionArray = ["You Like football ?", "Are you an athlete ?", "Are you a gamer ?"]    
+    for (let i = 0; i < questionArray.length; i++)
     {
-    alert (age, "age is less than or equal to zero")
+        let x = prompt(questionArray[i]);
+        fillArray(x, i);
+    }
+}
+function fillArray(x, i)
+{
+    entryAnswer = [];
+    if (x.toUpperCase() == "YES" || x.toUpperCase() == "NO" )
+    {
+        entryAnswer[i] = x;
+        console.log(entryAnswer[i]);
     }
     else
     {
-        console.log("Age : ", age)
-    }
-    answer = confirm("Confirm if you wants to skip the welcoming message");
-    //answer = prompt("Confirm if you want to skip welcoming message - \"confirm\" :")
-debugger;
-    switch(answer) {
-        case true : break;
-        default :
-        if (gender == "male" || gender == "female")
-        {
-            if (gender == "male")
-            {
-                gender = "Mr";
-                alert ("Welcome To Our Web Site " + gender +". " + name);
-                console.log("Welcome To Our Web Site " + gender +". " + name);
-            }
-            else
-            {
-                gender = "Ms"
-                alert ("Welcome To Our Web Site " + gender +". " + name);
-                console.log("Welcome To Our Web Site " + gender +". " + name);
-            } 
-            
-        }
-        else{
-            alert("Welcome To Our Web Site");
-        }
-        break;
+        entryAnswer[i] = "invalid";
+        console.log(entryAnswer[i]);
     }
 }
