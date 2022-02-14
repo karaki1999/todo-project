@@ -1,3 +1,4 @@
+var entryAnswer = [];
 function myFunction()
 {
     question();
@@ -13,7 +14,6 @@ function question()
 }
 function fillArray(x, i)
 {
-    entryAnswer = [];
     if (x.toUpperCase() == "YES" || x.toUpperCase() == "NO" )
     {
         entryAnswer[i] = x;
